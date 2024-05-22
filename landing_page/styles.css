@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffce4;
+    /* or another light color */
+    ;
+    color: #333333;
+}
+
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.company-name {
+    font-family: 'Lobster', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-stretch: expanded;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    padding: 100px 60px;
+
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content p {
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+.hero-text {
+    max-width: 50%;
+    padding: 0 0 0 13%;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.hero-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+#hero h2 {
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 20px;
+}
+
+#hero p {
+    margin: 0 0 20px;
+}
+
+#problem {
+    background-image: url("images/background.png");
+    padding: 100px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.problem-content {
+    padding: 100px 20px;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#features ul li {
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
