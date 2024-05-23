@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -19,7 +21,10 @@
         <div class="header-container">
             <div class="company-name"> Insight </div>
             <nav>
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul id="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -36,7 +41,7 @@
                 <button class="btn" onclick="downloadApp()"><i class="fa fa-download"></i> Join our mailing list!</button>
             </div>
             <div class="hero-image">
-                <img src="images/insight.png" alt="Hero Image">
+                <img src="images/insight.png" alt="Hero Image" width=90%>
             </div>
         </div>
     </section>
@@ -46,43 +51,45 @@
             <h3>The Problem</h3>
             <h2>Large indoor spaces like shopping malls, airports, and hospitals can be confusing to navigate.</h2>
             <h2>How can we make the indoor navigation experience better? </h2>
+            <img class="storyboard "src="images/problem.png" width=40%>
+            <img class="storyboard" src="images/solution.png" width=40%>
         </div>
     </section>
 
     <section id="features">
         <div class="left_hand">
-            hello
+            <img src="images/prototype.png" alt="image of app" width=100%>
         </div>
         <div class="right_hand">
             <div class="features-intro">
-                <h2>We deliberately choose tough topics</h2>
-                <p>Our app explores some of the most contentious issues of our time, so we can develop a deeper understanding of the world around us.</p>
+                <h3>Features</h3>
+                <h2>Get to where you want
+                    </br> to be - fast.</h2>
+                <p>Tell our app where you are and our app will get you there - in real time and in the fastest route possible.</p>
             </div>
             <div class="features-container">
                 <div class="feature-image-container feature1-bg">
                     <h3>Real-time navigation</h3>
-                    <p>Navigate big indoor spaces with ease using our real-time navigation feature.</p>
                 </div>
                 <div class="feature-image-container feature2-bg">
                     <h3>Accurate indoor maps</h3>
-                    <p>Access detailed and accurate indoor maps to find your way around.</p>
                 </div>
                 <div class="feature-image-container feature3-bg">
-                    <h3>Voice-guided directions</h3>
-                    <p>Get voice-guided directions for a hands-free navigation experience.</p>
+                    <h3>Real-time data analytics for businesses</h3>
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
 
     <section id="contact">
         <div class="left_hand">
-            hello
+            <div class="contact_text">
+                <h2><i>To get started, we need your support.</i></h2>
+                <h2>Leave us with your email to show support for our project!</h2>
+            </div>
         </div>
         <div class="right_hand">
-            <h2>Contact Us</h2>
+
         <form id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -100,7 +107,7 @@
     </section>
 
     <footer>
-        <p>&copy; Insight, 2024. All rights reserved.</p>
+        <p>&copy; Insight 2024. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

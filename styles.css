@@ -24,6 +24,19 @@ header {
     padding: 0 20px;
 }
 
+h2{
+    font-family: "Poppins", sans-serif;
+}
+
+h3{
+    font-family: "Merriweather", sans-serif;
+}
+
+#contact{
+    display: flex;
+}
+
+
 .company-name {
     font-family: 'Lobster', sans-serif;
     font-size: 35px;
@@ -107,7 +120,7 @@ nav ul li a {
 }
 
 .problem-content {
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
 button {
@@ -135,10 +148,14 @@ section {
 }
 
 .left_hand{
-    width: 40%;
+    width: 50%;
 }
 .right_hand{
-    width: 55%;
+    width: 50%;
+}
+
+.contact_text{
+    padding: 10%;
 }
 
 #features h2 {
@@ -170,7 +187,15 @@ section {
     border-radius: 15%;
     justify-content: center;
     align-items: center;
-    border: 2px solid #1d3557;
+    border: 1px solid #01204E;
+    padding: 2px;
+    text-align: left;
+}
+
+.feature-image-container h3{
+    color: #01204E;
+    font-size: 20px;
+    padding: 10px 0 0 15px;
 }
 
 .feature1-bg {
@@ -189,9 +214,10 @@ section {
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
-    opacity: 0.5; /* Adjust the opacity value */
+    opacity: 0.75; /* Adjust the opacity value */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
+
 
 .feature2-bg {
     position: relative;
@@ -205,7 +231,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/feature1.jpg");
+    background-image: url("images/feature2.png");
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
@@ -225,7 +251,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/feature1.jpg");
+    background-image: url("images/feature3.png");
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
@@ -265,4 +291,155 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.storyboard{
+    width: 40%
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1d3557;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav ul.show {
+        display: flex;
+        margin-top: 35px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left_hand{
+        width: 100%;
+    }
+    .right_hand{
+        width: 100%
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        max-width: 90%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+
+    .feature {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .feature-image-container {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    .features-container{
+        display: block;
+    }
+
+    .contact_text {
+        padding: 0;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #problem{
+        padding: 50px 20px;
+    }
+
+    .left_hand{
+        width: 100%;
+    }
+    .right_hand{
+        width: 100%
+    }
+
+    .storyboard{
+        width: 100%;
+    }
+
+    .company-name {
+        font-size: 24px;
+    }
+
+    .features-intro{
+        padding: 0 0 7.5% 0;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .feature-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .feature-image-container h3 {
+        font-size: 18px;
+    }
+
+    form input,
+    form textarea {
+        max-width: 90%;
+    }
 }
