@@ -1,5 +1,5 @@
 function downloadApp() {
-    alert("Download link coming soon!");
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
 }
 
 function toggleMenu() {
