@@ -63,13 +63,12 @@
 
     <section id="features">
         <div class="left_hand">
-            <img src="images/prototype.png" alt="image of app" width=100%>
+            <img src="images/prototype.png" alt="image of app" width=100% style="padding: 5% 0%;">
         </div>
         <div class="right_hand">
             <div class="features-intro">
                 <h3>Features</h3>
-                <h2>Get to where you want
-                    </br> to be - fast.</h2>
+                <h2>Get to where you want to be - fast.</h2>
                 <p>Tell our app where you are and our app will get you there - in real time and in the fastest route possible.</p>
             </div>
             <div class="features-container">
@@ -89,26 +88,38 @@
     <section id="contact">
         <div class="left_hand">
             <div class="contact_text">
-                <h2><i>To get started, we need your support.</i></h2>
-                <h2>Leave us with your email to show support for our project!</h2>
+                <h2><i>Want to be a part of our vision?</i></h2>
+                <p><b>Show your support with your email and get access to a FREE EXCLUSIVE MAP of SUTD!</b></p>
             </div>
         </div>
         <div class="right_hand">
+            <form
+                id="contactForm"
+                action="https://formspree.io/f/xgegbnlv"
+                method="POST">
 
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Send</button>
-        </form>
+                <button type="submit">Send</button>
+            </form>
         </div>
 
+            <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thank you for your submission!</h2>
+                <p>You may follow this link to access the free navigation map of SUTD. Enjoy! </p>
+                <a href="https://app.mappedin.com/map/6608dfd37c0c4fe5b4cc47fa?floor=m_72ec7ccad05d3219">SUTD Indoor Navigation Map</a>
+            </div>
+        </div>
     </section>
 
     <footer>
