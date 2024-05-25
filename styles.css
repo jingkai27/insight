@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #1d3557;
+    background-color: #B19470;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -30,17 +30,17 @@ header {
 
 h2{
     font-family: "Poppins", sans-serif;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 h3{
     font-family: "Merriweather", sans-serif;
     margin-bottom: 2.5%;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 p{
-    font-size: 26px;
+    font-size: 20px;
 }
 
 #contact{
@@ -49,10 +49,28 @@ p{
 
 
 .company-name {
-    font-family: 'Lobster', sans-serif;
-    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
     font-weight: 700;
     font-stretch: expanded;
+}
+.left-head {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    padding-left: 3.5%;
+}
+
+.company-name {
+    margin-right: 10px; /* Add some space between the text and the image */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Optional: Style the image */
+.left-head img {
+    width: 60px; /* Ensure the image has the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-top: -10px;
 }
 
 .video-contain-contain{
@@ -118,12 +136,12 @@ nav ul li a {
 
 .hero-text {
     max-width: 50%;
-    padding: 0 0 0 13%;
+    padding: 0 4% 0 7%;
 }
 
 .hero-text h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     margin: 0 0 20px;
 }
@@ -148,6 +166,10 @@ nav ul li a {
 
 .problem-content {
     padding: 50px 20px 40px;
+}
+
+.problem-text{
+    padding: 0px 5%;
 }
 
 button {
@@ -359,6 +381,23 @@ footer {
     height: 25%;
 }
 
+.modal a {
+    color: #3498db; /* Change the color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    padding: 5px 10px; /* Add some padding */
+    border: 1px solid #3498db; /* Add a border */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.modal a:hover {
+    background-color: #3498db; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
 .close {
     color: #aaa;
     float: right;
@@ -373,21 +412,18 @@ footer {
     cursor: pointer;
 }
 
-a {
-    color: #3498db; /* Change the color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text bold */
-    padding: 5px 10px; /* Add some padding */
-    border: 1px solid #3498db; /* Add a border */
-    border-radius: 5px; /* Round the corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    font-size: 28px;
-    margin-top: 10px;
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
 }
 
-a:hover {
-    background-color: #3498db; /* Change background on hover */
-    color: #fff; /* Change text color on hover */
+#main-footer p{
+    font-size: 14px;
 }
 
 /* Mobile and Tablet Styles */
@@ -406,9 +442,9 @@ a:hover {
         display: none;
         flex-direction: column;
         align-items: center;
-        background-color: #1d3557;
+        background-color: #B19470;
         position: absolute;
-        top: 60px;
+        top: 90px;
         left: 0;
         width: 100%;
         z-index: 1000;
@@ -483,27 +519,31 @@ a:hover {
     #contact {
         flex-direction: column;
     }
+
+    #main-footer p{
+        font-size: 8px;
+    }
 }
 
 @media (max-width: 520px) {
-    a{
+    .modal a{
         border: 0px solid #3498db;
         font-size: 24px;
     }
 
     h2{
         font-family: "Poppins", sans-serif;
-        font-size: 26px;
+        font-size: 22px;
     }
 
     h3{
         font-family: "Merriweather", sans-serif;
         margin-bottom: 2.5%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     p{
-        font-size: 24px;
+        font-size: 20px;
     }
 
 
@@ -555,5 +595,9 @@ a:hover {
     form input,
     form textarea {
         max-width: 90%;
+    }
+
+    #main-footer p{
+        font-size: 14px;
     }
 }
