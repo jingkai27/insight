@@ -36,7 +36,7 @@ h2{
 h3{
     font-family: "Merriweather", sans-serif;
     margin-bottom: 2.5%;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 p{
@@ -71,6 +71,18 @@ p{
     width: 45px; /* Ensure the image has the desired width */
     height: auto; /* Maintain the aspect ratio */
     margin-top: -10px;
+}
+
+.hero-image{
+    max-width: 50%;
+}
+
+.hero-image img{
+    width: 85%;
+}
+
+.poster-image img{
+    width: 65%;
 }
 
 .video-contain-contain{
@@ -452,7 +464,7 @@ footer {
     nav ul.show {
         display: flex;
         margin-top: 25px;
-        padding-bottom: 10px; 
+        padding-bottom: 10px;
     }
 
     nav ul li {
@@ -590,6 +602,14 @@ footer {
 
     .feature-image-container h3 {
         font-size: 18px;
+    }
+
+    .hero-image img{
+        width: 100%;
+    }
+
+    .poster-image img{
+        width: 100%;
     }
 
     form input,
