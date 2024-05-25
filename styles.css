@@ -68,7 +68,7 @@ p{
 
 /* Optional: Style the image */
 .left-head img {
-    width: 60px; /* Ensure the image has the desired width */
+    width: 45px; /* Ensure the image has the desired width */
     height: auto; /* Maintain the aspect ratio */
     margin-top: -10px;
 }
@@ -428,7 +428,6 @@ footer {
 
 /* Mobile and Tablet Styles */
 @media (max-width: 768px) {
-
     .modal-content{
         height: 30%;
     }
@@ -452,7 +451,8 @@ footer {
 
     nav ul.show {
         display: flex;
-        margin-top: 35px;
+        margin-top: 25px;
+        padding-bottom: 10px; 
     }
 
     nav ul li {
@@ -552,7 +552,7 @@ footer {
     }
 
     #problem{
-        padding: 50px 20px;
+        padding: 0px 20px;
     }
 
     .left_hand{
