@@ -213,6 +213,7 @@ section {
 }
 .right_hand{
     width: 50%;
+    padding-right: 4%;
 }
 
 .contact_text{
@@ -275,7 +276,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/feature1.jpg");
+    background-image: url("images/feature-pic-1.png");
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
@@ -296,7 +297,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/feature2.png");
+    background-image: url("images/feature-pic-2.png");
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
@@ -316,7 +317,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/feature3.png");
+    background-image: url("images/feature-pic-3.png");
     border-radius: 15%;
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
@@ -479,7 +480,9 @@ footer {
         width: 100%;
     }
     .right_hand{
-        width: 100%
+        width: 100%;
+        padding-right: 0;
+
     }
 
     nav ul li {
@@ -594,7 +597,6 @@ footer {
         font-size: 16px;
         padding: 10px 20px;
     }
-
     .feature-image {
         width: 80px;
         height: 80px;
